@@ -35,4 +35,6 @@
    toBuyList.splice(itemIndex,1)
   }
  }
+ 
+ function already
 })();
