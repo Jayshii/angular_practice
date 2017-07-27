@@ -36,5 +36,19 @@
   }
  }
  
- function already
+ function alreadyBoughtController(shoppingService)
+ {
+  var bought = this;
+  bought.items = shoppingService.getBoughtItems();
+ }
+ 
+ 
+ function toBuyController(shoppingService)
+ {
+  var tobuy = this;
+  tobuy.buyItem = function(index){
+   shoppingService.buyItem(index);
+  }
+  tobuy.items = shoppingService.getToBuyItems();
+ }
 })();
